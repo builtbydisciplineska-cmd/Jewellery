@@ -1,4 +1,8 @@
 import { JewelleryPiece } from '../types/jewellery';
+import heroImg from '../assets/images/hero_haute_jewellery_1791204332809.jpg';
+import solitaireImg from '../assets/images/product_solitaire_diamond_ring_1791204351720.jpg';
+import emeraldImg from '../assets/images/product_emerald_high_necklace_1791204367206.jpg';
+import sapphireImg from '../assets/images/product_sapphire_earrings_1791204380455.jpg';
 
 export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
   {
@@ -23,7 +27,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 136000,
     valuationGBP: 116000,
     referenceCode: "MV-SOL-092-PT",
-    image: "/src/assets/images/product_solitaire_diamond_ring_1791204351720.jpg",
+    image: solitaireImg,
     description: "An extraordinary 3.52-carat oval brilliant diamond of paramount purity (D/FL), set in a four-claw platinum wire mounting engineered with an open gallery to channel pure natural luminescence into the pavilion.",
     atelierNote: "Forged by Master Jeweler Jean-Luc Moreau over 68 bench hours in Place Vendôme. Features a cathedral taper and micro-bead setting under 40x optical magnification.",
     gemologicalDossier: {
@@ -63,7 +67,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 354000,
     valuationGBP: 302000,
     referenceCode: "MV-NCK-114-WG",
-    image: "/src/assets/images/product_emerald_high_necklace_1791204367206.jpg",
+    image: emeraldImg,
     description: "A museum-grade high joaillerie necklace crowned by nine graduated Colombian emeralds exhibiting the coveted 'jardin' inclusions characteristic of the historic Muzo deposits, articulated with flexible articulated diamond links.",
     atelierNote: "Each articulated link is calibrated to contour perfectly against the clavicle, moving like silk. Accompanied by a Gübelin Gem Lab portrait book.",
     gemologicalDossier: {
@@ -102,7 +106,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 179000,
     valuationGBP: 153000,
     referenceCode: "MV-EAR-205-PT",
-    image: "/src/assets/images/product_sapphire_earrings_1791204380455.jpg",
+    image: sapphireImg,
     description: "Suspended drops of unheated Ceylon sapphires glowing with rich royal blue saturation, surrounded by an architectural spray of baguette and brilliant-cut diamonds designed to dance with natural light.",
     atelierNote: "Engineered with balanced weight distribution and secure French clip lever-backs to ensure effortless comfort during evening galas.",
     gemologicalDossier: {
@@ -141,7 +145,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 81000,
     valuationGBP: 69000,
     referenceCode: "MV-BRC-301-RG",
-    image: "/src/assets/images/hero_haute_jewellery_1791204332809.jpg",
+    image: heroImg,
     description: "A sculpted architectural open-wire cuff in warm 18k rose gold, embedded with a celestial constellation of micro-pavé diamonds exhibiting laser-cut precision fluting.",
     atelierNote: "Features an invisible dual-spring clasp system requiring four weeks of specialized horological spring calibration.",
     gemologicalDossier: {
@@ -181,7 +185,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 198000,
     valuationGBP: 168000,
     referenceCode: "MV-SOL-108-YG",
-    image: "/src/assets/images/product_solitaire_diamond_ring_1791204351720.jpg",
+    image: solitaireImg,
     description: "An intoxicating 4.12-carat Fancy Intense Yellow radiant diamond set in 18k yellow gold claws with a concealed platinum under-bezel, flanked by two crystalline trapezoid side stones.",
     atelierNote: "The mounting was specifically alloyed with 18k deep yellow gold beneath the center stone to optimize and elevate the stone's natural honey-golden fire.",
     gemologicalDossier: {
@@ -190,7 +194,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
       cutGrade: "Exceptional",
       polish: "Excellent",
       symmetry: "Excellent",
-      fluorescence: "Medium Yellow (Harmonious)",
+      fluorescence: "Medium",
       dimensions: "9.85 x 8.40 x 5.48 mm",
       tablePercentage: "64.0%",
       depthPercentage: "65.2%"
@@ -221,7 +225,7 @@ export const HIGH_JEWELLERY_PIECES: JewelleryPiece[] = [
     valuationEUR: 386000,
     valuationGBP: 329000,
     referenceCode: "MV-NCK-088-PT",
-    image: "/src/assets/images/hero_haute_jewellery_1791204332809.jpg",
+    image: heroImg,
     description: "The pinnacle of classic Parisian high jewelry: a seamless rivière of 73 precision-matched diamonds gently graduating toward a breathtaking 2.10 ct D/IF solitary focal stone.",
     atelierNote: "Each collet is hand-notched with knife-edge platinum joints so the necklace drapes without twisting, lying flat against the skin in any movement.",
     gemologicalDossier: {

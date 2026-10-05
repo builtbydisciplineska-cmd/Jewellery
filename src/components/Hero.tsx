@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, Sparkles } from 'lucide-react';
+import heroImg from '../assets/images/hero_haute_jewellery_1791204332809.jpg';
 
 interface HeroProps {
   onExploreCreations: () => void;
@@ -12,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCreations, onBookSalon }) =
       {/* Background High Joaillerie Editorial Image with Contrast Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_haute_jewellery_1791204332809.jpg"
+          src={heroImg}
           alt="Maison Valoire Haute Joaillerie emerald and diamond necklace on travertine"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05] scale-[1.02] transform transition-transform duration-1000"

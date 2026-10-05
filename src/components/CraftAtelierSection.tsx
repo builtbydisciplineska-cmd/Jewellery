@@ -1,6 +1,7 @@
 import React from 'react';
 import { ATELIER_STAGES } from '../data/pieces';
 import { ShieldCheck, Award, Sparkles } from 'lucide-react';
+import craftBenchImg from '../assets/images/craft_atelier_bench_1791204394360.jpg';
 
 export const CraftAtelierSection: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const CraftAtelierSection: React.FC = () => {
       {/* Hero Atelier Visual Stage */}
       <div className="relative mb-16 overflow-hidden border border-[#22201D] aspect-[16/9] sm:aspect-[21/9]">
         <img
-          src="/src/assets/images/craft_atelier_bench_1791204394360.jpg"
+          src={craftBenchImg}
           alt="Master jeweler working on gold ring with micro loupe at Parisian bench"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center filter brightness-[0.85] contrast-[1.05]"
