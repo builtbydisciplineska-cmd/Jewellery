@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SALON_LOCATIONS } from '../data/pieces';
 import { JewelleryPiece } from '../types/jewellery';
 import { X, Calendar, Clock, MapPin, CheckCircle2, ShieldCheck, Sparkles, Printer } from 'lucide-react';
@@ -24,6 +24,20 @@ export const PrivateSalonModal: React.FC<PrivateSalonModalProps> = ({
   const [specialRequests, setSpecialRequests] = useState<string>('');
   const [isConfirmed, setIsConfirmed] = useState<boolean>(false);
   const [confirmationCode, setConfirmationCode] = useState<string>('');
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

@@ -190,6 +190,8 @@ export const JewelleryGrid: React.FC<JewelleryGridProps> = ({
                     src={piece.image}
                     alt={`${piece.title} - ${piece.primaryGemstone.type}`}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   

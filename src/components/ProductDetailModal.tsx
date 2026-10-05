@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { JewelleryPiece } from '../types/jewellery';
 import { X, ZoomIn, Bookmark, Check, ShieldCheck, Gem, Sparkles, Scale, Info, MapPin } from 'lucide-react';
 
@@ -35,6 +35,19 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   });
 
   const imageContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'unset';
+    };
+  }, [onClose]);
 
   if (!piece) return null;
 

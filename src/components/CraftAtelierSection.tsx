@@ -29,6 +29,8 @@ export const CraftAtelierSection: React.FC = () => {
           src={craftBenchImg}
           alt="Master jeweler working on gold ring with micro loupe at Parisian bench"
           referrerPolicy="no-referrer"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover object-center filter brightness-[0.85] contrast-[1.05]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0A09] via-transparent to-black/30" />

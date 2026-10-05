@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DossierItem, JewelleryPiece } from '../types/jewellery';
 import { X, Trash2, ArrowRight, ShieldCheck, Calendar, CheckCircle2, Printer, MapPin } from 'lucide-react';
 
@@ -26,6 +26,20 @@ export const PrivateDossierDrawer: React.FC<PrivateDossierDrawerProps> = ({
   const [clientEmail, setClientEmail] = useState<string>('');
   const [salonLocation, setSalonLocation] = useState<string>('Paris Place Vendôme');
   const [reservationRef, setReservationRef] = useState<string>('');
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

@@ -16,6 +16,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreCreations, onBookSalon }) =
           src={heroImg}
           alt="Maison Valoire Haute Joaillerie emerald and diamond necklace on travertine"
           referrerPolicy="no-referrer"
+          loading="eager"
+          decoding="async"
           className="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.05] scale-[1.02] transform transition-transform duration-1000"
         />
         {/* Measured dark scrim ensuring 4.5:1 text contrast */}
