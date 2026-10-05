@@ -1,0 +1,6 @@
+{
+  "name": "Maison Valoire Haute Joaillerie",
+  "description": "An ultra-premium jewellery showcase presenting exceptional high joaillerie, rare certified gemstones, bespoke craftsmanship, and private salon viewings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
